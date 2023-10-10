@@ -1,0 +1,136 @@
+:root{
+	--primary-color: rgb(40,99,255);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: cursive;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #bbc6fa;
+}
+
+span{
+	color: var(--primary-color);
+}
+
+.heading{
+	text-align: center;
+	padding-bottom: 1rem;
+	font-size: 1.5rem;
+	color: var(--primary-color);
+}
+
+.container{
+	height: 90vh;
+	width: 30rem;
+	padding: 2rem 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 1rem 1rem 1rem 0.2rem;
+	background: #fff;
+	border-radius: 1rem;
+}
+
+.container form {
+	width: 100%;
+}
+
+.container form input{
+	width: 80%;
+	padding: 1rem;
+	margin: 2rem;
+	border: 0.1rem solid;
+	font-size: 1rem;
+	border-radius: 1rem;
+	outline: none;
+}
+
+.container form button{
+	width: 50%;
+	padding: 0.5rem;
+	outline: none;
+	border: none;
+	border-radius: 1rem;
+	margin: 0 2rem;
+	background: var(--primary-color);
+	font-size: 1rem;
+}
+
+.error{
+	font-size: 1.3rem;
+	color: red;
+}
+
+.messages{
+	width: 100%;
+	overflow-y: scroll;
+	flex: 1;
+}
+
+.input{
+	width: 100%;
+	height: 3rem;
+}
+
+.input input{
+	width: 80%;
+	height: 3rem;
+	padding: 1rem;
+	border: 0.1rem solid;
+	font-size: 1rem;
+	border-radius: 1rem;
+	outline: none;
+}
+
+.input button{
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	background: var(--primary-color);
+	cursor: pointer;
+}
+
+ul{
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+}
+
+.active-user{
+	color: green;
+}
+
+.deactive-user{
+	color: red;
+}
+
+@media (max-width:600px){
+	.container{
+		height: 100vh;
+		width: 100vw;
+		border-radius: 0;
+	}
+}
+
+@media (max-width:444px){
+	.input{
+		height: 5rem;
+	}
+
+	.input input{
+		width: 100%;
+	}
+
+	.input button{
+		margin-top: 0.5rem;
+	}
+}

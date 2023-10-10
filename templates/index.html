@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+
+
+<div class="container">
+	<div class="heading"><h2>Login</h2></div>
+	<form action="" method="post">
+		<input  type="text" name="name" placeholder="Name" value="{{name}}">
+		<button type="submit" name="create">create a room</button>
+
+		<br>
+		<input type="text" name="room_code" placeholder="Room Code" value="{{room_code}}">
+		<button type="submit" name="join">join a room</button>
+	</form>
+
+		{% if error %}
+	<p class="error">
+		{{error}}
+	</p>
+		{% endif %}
+</div>
+
+
+ {% endblock %}
